@@ -11,8 +11,6 @@
 # production
 /build
 
-#api
-/src/Requests.js
 
 # misc
 .DS_Store
