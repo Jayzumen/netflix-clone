@@ -14,6 +14,7 @@ const Main = () => {
       setMovies(response.data.results);
     });
   }, []);
+  console.log(movie);
 
   const truncateString = (str, num) => {
     if (str?.length > num) {
@@ -24,11 +25,11 @@ const Main = () => {
   };
 
   return (
-    <div className="w-full h-[550px] text-white">
+    <div className="w-full h-[550px] lg:h-[750px] text-white">
       <div className="w-full h-full">
-        <div className="absolute w-full h-[550px] bg-gradient-to-r from-black"></div>
+        <div className="absolute w-full h-[550px] lg:h-[750px] bg-gradient-to-r from-black"></div>
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover md:object-fill"
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
           alt={movie?.title}
         />
