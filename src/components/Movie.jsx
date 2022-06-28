@@ -2,8 +2,6 @@ import React from "react";
 import { FaRegHeart } from "react-icons/fa";
 
 const Movie = ({ item }) => {
-  // const like = useState(false);
-
   return (
     <div className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2">
       <img
@@ -17,11 +15,6 @@ const Movie = ({ item }) => {
         </p>
         <p>
           <FaRegHeart className="absolute top-4 left-4 text-gray-300" />
-          {/* {like ? (
-            <FaHeart className="absolute top-4 left-4 text-gray-300" />
-          ) : (
-            <FaRegHeart className="absolute top-4 left-4 text-gray-300" />
-          )} */}
         </p>
       </div>
     </div>
